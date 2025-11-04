@@ -1,4 +1,4 @@
-
+/* Container grid setup */
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -8,7 +8,7 @@
   padding: 10px;
 }
 
-
+/* Box styling */
 .box {
   background-color: white;
   color: black;
@@ -19,13 +19,13 @@
   align-items: center;
 }
 
-
+/* Specific layout for each box */
 .box:nth-child(1) {
-  grid-column: 1 / 4; 
+  grid-column: 1 / 4; /* spans across all 3 columns */
 }
 
 .box:nth-child(2) {
-  grid-row: 2 / 6; 
+  grid-row: 2 / 6; /* spans multiple rows on the left */
 }
 
 .box:nth-child(3) {
@@ -67,4 +67,5 @@
   grid-column: 1 / 2;
   grid-row: 6;
 }
+
 
