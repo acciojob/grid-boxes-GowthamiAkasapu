@@ -1,71 +1,42 @@
-/* Container grid setup */
-.container {
+#grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 100px);
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 124px);
+  grid-gap: 10px;
   background-color: green;
   padding: 10px;
 }
 
-/* Box styling */
-.box {
-  background-color: white;
-  color: black;
-  font-size: 24px;
+#grid > div {
+  background-color: green;
+  color: white;
   font-weight: bold;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Specific layout for each box */
-.box:nth-child(1) {
-  grid-column: 1 / 4; /* spans across all 3 columns */
+/* Layout rules based on test expectations */
+#grid > div:nth-child(1) {
+  grid-column: span 4;
 }
 
-.box:nth-child(2) {
-  grid-row: 2 / 6; /* spans multiple rows on the left */
+#grid > div:nth-child(2) {
+  grid-row: span 4;
 }
 
-.box:nth-child(3) {
-  grid-column: 2;
-  grid-row: 2;
+#grid > div:nth-child(4) {
+  grid-column: span 2;
 }
 
-.box:nth-child(4) {
-  grid-column: 3;
-  grid-row: 2;
+#grid > div:nth-child(5) {
+  grid-column: span 2;
 }
 
-.box:nth-child(5) {
-  grid-column: 2;
-  grid-row: 3;
+#grid > div:nth-child(10) {
+  grid-column: span 3;
 }
 
-.box:nth-child(6) {
-  grid-column: 3;
-  grid-row: 3;
-}
-
-.box:nth-child(7) {
-  grid-column: 2;
-  grid-row: 4;
-}
-
-.box:nth-child(8) {
-  grid-column: 3;
-  grid-row: 4;
-}
-
-.box:nth-child(9) {
-  grid-column: 3;
-  grid-row: 5;
-}
-
-.box:nth-child(10) {
-  grid-column: 1 / 2;
-  grid-row: 6;
-}
 
 
