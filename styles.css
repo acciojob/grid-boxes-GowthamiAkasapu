@@ -1,12 +1,11 @@
 #grid {
   display: grid;
-  width: 970px;             /* ✅ Forces 4 × 242.5px columns */
-  margin: 0 auto;           /* centers grid */
+  width: 1000px;               /* ✅ total width so each column = 242.5px */
+  margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 124px);
   grid-gap: 10px;
   background-color: green;
-  padding: 10px;
 }
 
 #grid > div {
@@ -19,6 +18,7 @@
   align-items: center;
 }
 
+/* Layout spans */
 #grid > div:nth-child(1) {
   grid-column: span 4;
 }
@@ -38,6 +38,3 @@
 #grid > div:nth-child(10) {
   grid-column: span 3;
 }
-
-
-
