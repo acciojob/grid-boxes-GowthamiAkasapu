@@ -1,6 +1,6 @@
 #grid {
   display: grid;
-  width: 1000px;               /* ✅ total width so each column = 242.5px */
+  width: 1000px;              
   margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 124px);
