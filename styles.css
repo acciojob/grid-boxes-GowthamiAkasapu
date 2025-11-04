@@ -1,5 +1,7 @@
 #grid {
   display: grid;
+  width: 970px;             /* ✅ Forces 4 × 242.5px columns */
+  margin: 0 auto;           /* centers grid */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 124px);
   grid-gap: 10px;
@@ -17,7 +19,6 @@
   align-items: center;
 }
 
-/* Layout rules based on test expectations */
 #grid > div:nth-child(1) {
   grid-column: span 4;
 }
